@@ -6,6 +6,7 @@ This repository contains my personal configuration files for various tools and a
 
 - **.zshrc**: Zsh shell configuration
 - **nvim/**: Neovim configuration
+- alacritty: MacOS Terminal Emulator Setup
 
 ## Installation
 
