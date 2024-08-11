@@ -1,6 +1,8 @@
 require "nvchad.options"
-
+local o = vim.o
 -- add yours here!
-
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+o.number = true
+o.numberwidth = 2
+o.mouse = "a"
+o.smartindent = true
+o.cursorlineopt ='both' -- to enable cursorline!
