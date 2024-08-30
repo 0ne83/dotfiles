@@ -1,0 +1,16 @@
+{
+  "clangd": {
+    "cmd": ["clangd"],
+    "filetypes": ["c", "cpp", "objc", "objcpp"],
+    "root_dir": "root_pattern('.git', 'compile_commands.json', 'compile_flags.txt', '.clangd', '.cache')",
+    "settings": {
+      "clangd": {
+        "semanticHighlighting": true,
+        "completion": {
+          "caseSensitivity": true,
+          "snippets": true
+        }
+      }
+    }
+  }
+}

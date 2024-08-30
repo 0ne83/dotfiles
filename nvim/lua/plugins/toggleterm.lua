@@ -5,7 +5,7 @@ return {
     cmd = { "ToggleTerm" },
     keys = {
       {
-        "<leader>Tf",
+        "<A-i>",
         function()
           local count = vim.v.count1
           require("toggleterm").toggle(count, 0, LazyVim.root.get(), "float")
@@ -34,23 +34,16 @@ return {
         desc = "Close Term",
       },
       {
-        "<leader>Ts",
+        "<A-s>",
         "<cmd>TermSelect<cr>",
         desc = "Select term",
       },
       {
-        "<leader>Tt",
+        "<A-t>",
         function()
           require("toggleterm").toggle(1, 100, LazyVim.root.get(), "tab")
         end,
         desc = "ToggleTerm (tab root_dir)",
-      },
-      {
-        "<leader>TT",
-        function()
-          require("toggleterm").toggle(1, 100, vim.loop.cwd(), "tab")
-        end,
-        desc = "ToggleTerm (tab cwd_dir)",
       },
     },
     opts = {
@@ -71,6 +64,7 @@ return {
       persist_size = true,
       direction = "horizontal" or "vertical" or "window" or "float",
       close_on_exit = true, -- close the terminal window when the process exits
+      open_on_start = false,
     },
   },
 }

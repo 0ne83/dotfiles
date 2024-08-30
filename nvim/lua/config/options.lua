@@ -5,3 +5,9 @@
 local opt = vim.opt
 
 opt.relativenumber = false
+opt.laststatus = 3
+opt.splitkeep = "screen"
+-- opt.tabstop = 8
+-- opt.shiftwidth = 4
+-- opt.softtabstop = 1
+opt.expandtab = true
