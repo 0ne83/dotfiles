@@ -7,6 +7,7 @@ This repository contains my personal configuration files for various tools and a
 - **.zshrc**: Zsh shell configuration
 - **nvim/**: Neovim configuration
 - alacritty: MacOS Terminal Emulator Setup
+- emacs: Doom Emacs Config
 
 ## Installation
 
@@ -25,13 +26,6 @@ Here are some example commands to create symbolic links for the dotfiles:
 ```sh
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/nvim ~/.config/nvim
-```
-
-You can also use a script to automate the linking process:
-
-```sh
-cd ~/dotfiles
-./install.sh
 ```
 
 ## Customization
